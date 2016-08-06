@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en-us" ng-app="angularApp">
+    <head>
+        <title>SAPOSKI</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta charset="UTF-8">
+
+        <!-- load bootstrap and fontawesome via CDN -->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+        <style>
+            html, body
+            {
+                font-size: 1.0em;
+                font-weight: lighter;
+            }
+
+            .navbar {
+               min-height: 100px;
+            }
+            .navbar-nav {
+                padding: 40px;
+                margin: 7.5px -15px;
+            }
+            .navbar-default {
+                background-color: #fff;
+                border-color: #fff;
+            }
+        </style>
+
+        <!-- load angular via CDN -->
+        <script src="//code.angularjs.org/1.3.0-rc.1/angular.min.js"></script>
+        <script src="//code.angularjs.org/1.3.0-rc.1/angular-route.min.js"></script>
+        <script src="app.js"></script>
+
+    </head>
+    <body>
+
+        <header>
+			<nav class="navbar navbar-default">
+			<div class="container">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="/">
+                  <div class='logo'>
+                     <div id="element-1" class="element">S</div>
+                     <div id="element-2" class="element">A</div>
+                     <div id="element-3" class="element">P</div>
+                     <div id="element-4" class="element">O</div>
+                     <div id="element-5" class="element">S</div>
+                     <div id="element-6" class="element">K</div>
+                     <div id="element-7" class="element">I</div>
+                  </div> <!--end logo-->
+               </a>
+
+
+				</div>
+
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#"><i class="fa fa-home"></i> home</a></li>
+               <li><a href="#portrait"><i class="fa fa-home"></i> portrait</a></li>
+					<li><a href="#/crasher"><i class="fa fa-home"></i> crasher</a></li>
+					<li><a href="#/street"><i class="fa fa-home"></i>street</a></li>
+				</ul>
+			</div>
+			</nav>
+		</header>
+
+        <div class="container">
+         <div ng-view></div>
+		  </div>
+
+    </body>
+</html>
